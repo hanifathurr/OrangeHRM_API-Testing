@@ -1,0 +1,1173 @@
+{
+	"id": "d2a8ff35-e153-4a65-a9d3-e65fc6e06f61",
+	"name": "SP3 Hanif",
+	"timestamp": "2022-07-18T06:22:54.789Z",
+	"collection_id": "21866757-0faf911c-ed2b-4364-853e-dd5f334d4295",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 79,
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "0f52375f-37d3-4a87-931e-ccde8b3494ae",
+			"name": "Create Token",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/oauth/issueToken",
+			"time": 75,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				75
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "5428caa8-789d-4f82-8b28-933d39b92c73",
+			"name": "User Login",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/login",
+			"time": 285,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify login": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify login": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				285
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify login": true
+				}
+			]
+		},
+		{
+			"id": "86b65132-5522-482b-9200-162d2e778b14",
+			"name": "Invalid User Login",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/login",
+			"time": 834,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 202": true,
+				"Verify credentials are wrong": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 202": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify credentials are wrong": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				834
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 202": true,
+					"Verify credentials are wrong": true
+				}
+			]
+		},
+		{
+			"id": "5920a239-02e1-4ab6-961b-4ad3b31c86d1",
+			"name": "Get User",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/user",
+			"time": 60,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "3461e004-c99c-41d6-a9b8-a30ebf0ee2ba",
+			"name": "Get Organization Information",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/organization",
+			"time": 53,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "9d1361c2-876f-453d-973e-29c8b66643ca",
+			"name": "Save Employee",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/1",
+			"time": 55,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify success response": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify success response": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				55
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify success response": true
+				}
+			]
+		},
+		{
+			"id": "3f12f9e7-1cca-4862-8ed2-b21ca2b31884",
+			"name": "Employee Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify employee ID": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify employee ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify employee ID": true
+				}
+			]
+		},
+		{
+			"id": "3cd0e390-2b3d-4194-9f7c-bf0ad4cfdde3",
+			"name": "Update Employee Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify updated confirmation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify updated confirmation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				50
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify updated confirmation": true
+				}
+			]
+		},
+		{
+			"id": "b5ccb025-16ac-4e5d-a08a-dcecedf20c76",
+			"name": "Employee Search",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/search",
+			"time": 1509,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Body matches string": false
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1509
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Body matches string": false
+				}
+			]
+		},
+		{
+			"id": "73d4287f-4caa-4041-8692-637b3dc05ccc",
+			"name": "Save Contact Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/contact-detail",
+			"time": 84,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				84
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "243d68ae-e4bd-496b-8283-6fe0f760f468",
+			"name": "Employee Contact Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/contact-detail",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify employee ID": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify employee ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify employee ID": true
+				}
+			]
+		},
+		{
+			"id": "c927db65-fbd9-4308-8a26-962754bcabed",
+			"name": "Update Contact Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/contact-detail",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "4b5eb21d-4609-4230-b47f-db9de11ce692",
+			"name": "Save Employee Dependents",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/dependent",
+			"time": 47,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify dependant is saved": true,
+				"Verify sequence number is appears": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify dependant is saved": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify sequence number is appears": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify dependant is saved": true,
+					"Verify sequence number is appears": true
+				}
+			]
+		},
+		{
+			"id": "a831fca1-3bc0-4990-bca9-2ef607449081",
+			"name": "Get Employee Dependents",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/dependent",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Check Dependant": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Dependant": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Check Dependant": true
+				}
+			]
+		},
+		{
+			"id": "80a96ecb-4953-458b-8481-43cdf90ce447",
+			"name": "Update Employee Dependent",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/dependent",
+			"time": 49,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify updated confirmation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify updated confirmation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify updated confirmation": true
+				}
+			]
+		},
+		{
+			"id": "3b3e7a93-c857-412c-9e97-85fb7f78e6c5",
+			"name": "Get Employee Dependents Copy",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/dependent",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "4ce8c7ba-4996-4873-b424-bc09f7044573",
+			"name": "Save Employee Job Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/job-detail",
+			"time": 62,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify success respond": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify success respond": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				62
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify success respond": true
+				}
+			]
+		},
+		{
+			"id": "190d0d71-380b-4137-b641-b9e96f2e0b11",
+			"name": "Employee Job Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/job-detail",
+			"time": 44,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Check Job Title": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check Job Title": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				44
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Check Job Title": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "921ed585-bc6c-485d-939c-62f721c09b60",
+			"name": "Update Employee Job Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/job-detail",
+			"time": 57,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify updated confirmation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify updated confirmation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				57
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify updated confirmation": true
+				}
+			]
+		},
+		{
+			"id": "97b5d4f6-2577-4d6b-b209-cba4b18679df",
+			"name": "Save Supervisor Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/supervisor",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify updated confirmation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify updated confirmation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify updated confirmation": true
+				}
+			]
+		},
+		{
+			"id": "f1db2bf3-eb10-401a-8837-a1ee0934cbb9",
+			"name": "Get Supervisor Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/supervisor",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify supervisor ID": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify supervisor ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify supervisor ID": true
+				}
+			]
+		},
+		{
+			"id": "eba55325-2147-4f41-bed6-c351a7935972",
+			"name": "Update Supervisor Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/supervisor",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify updated confirmation": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify updated confirmation": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				50
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify updated confirmation": true
+				}
+			]
+		},
+		{
+			"id": "1f7d5d84-d114-40c8-b6b5-48843610d7de",
+			"name": "Delete Supervisor Details",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/911/supervisor",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Verify deleted successfully": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify deleted successfully": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Verify deleted successfully": true
+				}
+			]
+		},
+		{
+			"id": "fcb61876-57a5-40a3-b7b5-52f9337d5961",
+			"name": "Punch In",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/676/punch-in",
+			"time": 46,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "007a5495-3f60-4c5e-b9d6-ffaaa24f60f9",
+			"name": "Double Punch In",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/676/punch-in",
+			"time": 46,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 202": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 202": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 202": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "6145a35d-bc81-4e13-a2fc-12131fe22661",
+			"name": "Punch Out",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/676/punch-out",
+			"time": 46,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "43ca31e5-bf82-45d4-9dd1-a9aa28b24172",
+			"name": "Double Punch Out",
+			"url": "http://qa.cilsy.id/symfony/web/index.php/api/v1/employee/676/punch-out",
+			"time": 60,
+			"responseCode": {
+				"code": 202,
+				"name": "Accepted"
+			},
+			"tests": {
+				"Response time is less than 2000ms": true,
+				"Status code is 202": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 202": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Response time is less than 2000ms": true,
+					"Status code is 202": true,
+					"Your test name": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3916,
+	"collection": {
+		"requests": [
+			{
+				"id": "0f52375f-37d3-4a87-931e-ccde8b3494ae",
+				"method": "POST"
+			},
+			{
+				"id": "5428caa8-789d-4f82-8b28-933d39b92c73",
+				"method": "POST"
+			},
+			{
+				"id": "86b65132-5522-482b-9200-162d2e778b14",
+				"method": "POST"
+			},
+			{
+				"id": "5920a239-02e1-4ab6-961b-4ad3b31c86d1",
+				"method": "GET"
+			},
+			{
+				"id": "3461e004-c99c-41d6-a9b8-a30ebf0ee2ba",
+				"method": "GET"
+			},
+			{
+				"id": "9d1361c2-876f-453d-973e-29c8b66643ca",
+				"method": "POST"
+			},
+			{
+				"id": "3f12f9e7-1cca-4862-8ed2-b21ca2b31884",
+				"method": "GET"
+			},
+			{
+				"id": "3cd0e390-2b3d-4194-9f7c-bf0ad4cfdde3",
+				"method": "PUT"
+			},
+			{
+				"id": "b5ccb025-16ac-4e5d-a08a-dcecedf20c76",
+				"method": "GET"
+			},
+			{
+				"id": "73d4287f-4caa-4041-8692-637b3dc05ccc",
+				"method": "POST"
+			},
+			{
+				"id": "243d68ae-e4bd-496b-8283-6fe0f760f468",
+				"method": "GET"
+			},
+			{
+				"id": "c927db65-fbd9-4308-8a26-962754bcabed",
+				"method": "PUT"
+			},
+			{
+				"id": "4b5eb21d-4609-4230-b47f-db9de11ce692",
+				"method": "POST"
+			},
+			{
+				"id": "a831fca1-3bc0-4990-bca9-2ef607449081",
+				"method": "GET"
+			},
+			{
+				"id": "80a96ecb-4953-458b-8481-43cdf90ce447",
+				"method": "PUT"
+			},
+			{
+				"id": "3b3e7a93-c857-412c-9e97-85fb7f78e6c5",
+				"method": "DELETE"
+			},
+			{
+				"id": "4ce8c7ba-4996-4873-b424-bc09f7044573",
+				"method": "POST"
+			},
+			{
+				"id": "190d0d71-380b-4137-b641-b9e96f2e0b11",
+				"method": "GET"
+			},
+			{
+				"id": "921ed585-bc6c-485d-939c-62f721c09b60",
+				"method": "PUT"
+			},
+			{
+				"id": "97b5d4f6-2577-4d6b-b209-cba4b18679df",
+				"method": "POST"
+			},
+			{
+				"id": "f1db2bf3-eb10-401a-8837-a1ee0934cbb9",
+				"method": "GET"
+			},
+			{
+				"id": "eba55325-2147-4f41-bed6-c351a7935972",
+				"method": "PUT"
+			},
+			{
+				"id": "1f7d5d84-d114-40c8-b6b5-48843610d7de",
+				"method": "DELETE"
+			},
+			{
+				"id": "fcb61876-57a5-40a3-b7b5-52f9337d5961",
+				"method": "POST"
+			},
+			{
+				"id": "007a5495-3f60-4c5e-b9d6-ffaaa24f60f9",
+				"method": "POST"
+			},
+			{
+				"id": "6145a35d-bc81-4e13-a2fc-12131fe22661",
+				"method": "POST"
+			},
+			{
+				"id": "43ca31e5-bf82-45d4-9dd1-a9aa28b24172",
+				"method": "POST"
+			}
+		]
+	}
+}
